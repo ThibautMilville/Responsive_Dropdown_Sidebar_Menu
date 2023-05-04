@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,52 @@
   <!-- BOXICONS CDN LINK -->
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
+
 <body>
-  <div class="sidebar">
+  <!-- SIDEBAR -->
+  <div class="sidebar close">
+    <!-- LOGO -->
     <div class="logo-details">
       <i class="bx bxl-c-plus-plus"></i>
       <span class="logo_name">Thybow</span>
     </div>
+    <!-- NAV MENU -->
+    <ul class="nav-links">
+      <!-- DASHBOARD -->
+      <li>
+        <a href="#">
+          <i class='bx bx-grid-alt'></i>
+          <span class="link_name">Dashboard</span>
+        </a>
+      </li>
+      <!-- CATEGORY -->
+      <li>
+        <div class="icon-link">
+          <a href="#">
+            <i class="bx bx-collection"></i>
+            <span class="link_name">Category</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Category</a></li>
+          <li><a href="#">Web design</a></li>
+          <li><a href="#">Login form</a></li>
+          <li><a href="#">Card design</a></li>
+        </ul>
+      </li>
+      <!-- POSTS -->
+      <li>
+        <div class="icon-link">
+          <a href="#">
+            <i class="bx bx-book-alt"></i>
+            <span class="link_name">Posts</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+      </li>
+    </ul>
   </div>
 </body>
+
 </html>
