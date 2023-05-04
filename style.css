@@ -76,6 +76,11 @@
   line-height: 50px;
   color: #fff;
   font-size: 20px;
+  transition: all 0.3s ease;
+}
+
+.sidebar .nav-links li.showMenu i.arrow {
+  transform: rotate(-180deg);
 }
 
 .sidebar .nav-links li a .link_name {
@@ -90,6 +95,10 @@
   margin-top: -10px;
   background: #1d1b31;
   display: none;
+}
+
+.sidebar .nav-links li.showMenu .sub-menu {
+  display: block;
 }
 
 .sidebar .nav-links li .sub-menu a {
