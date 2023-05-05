@@ -59,6 +59,10 @@
 .sidebar .nav-links {
   height: 100%;
   padding: 30px 0 150px 0;
+  overflow: auto;
+}
+
+.sidebar.close .nav-links {
   overflow: visible;
 }
 
@@ -75,6 +79,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.sidebar.close .nav-links li .icon-link {
+  display: block;
 }
 
 .sidebar .nav-links li a {
@@ -199,6 +207,15 @@
   justify-content: space-between;
   background: #1d1b31;
   padding: 6px 0;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .profile-details {
+  background: none;
+}
+
+.sidebar.close .profile-details {
+  width: 78px;
 }
 
 .sidebar .profile-details .profile-content {
@@ -213,6 +230,10 @@
   border-radius: 16px;
   margin: 0 14px 0 12px;
   background: #1d1b31;
+  transition: all 0.5s ease;
+}
+
+.sidebar.close .profile-details img {
   padding: 10px;
 }
 
@@ -221,13 +242,20 @@
   color: #fff;
   font-size: 18px;
   font-weight: 500;
+  white-space: nowrap;
+}
+
+.sidebar.close .profile-details i,
+.sidebar.close .profile-details .profile_name,
+.sidebar.close .profile-details .job {
+  display: none;
 }
 
 .sidebar .profile-details .job {
   font-size: 12px;
 }
 
-/* SIDEBAR BUTTON */
+/* SIDEBAR TOGGLE */
 .home-section {
   position: relative;
   background: #e4e9f7;
@@ -256,6 +284,7 @@
 
 .home-section .home-content .bx-menu {
   margin: 0 15px;
+  cursor: pointer;
 }
 
 .home-section .home-content .text {
